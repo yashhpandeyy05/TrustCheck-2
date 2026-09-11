@@ -1,0 +1,8 @@
+{
+  "name": "Remix TrustCheck",
+  "description": "Pre-deployment safety gate for healthcare AI. Stress-tests AI models under realistic and difficult clinical conditions before they reach real patients.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

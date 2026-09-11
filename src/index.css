@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Accent Color - Deep Forest Green */
+  --color-accent: #0A3B24;
+  --color-accent-hover: #134E35;
+  --color-accent-light: #1A6044;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAFAFA; /* Off-white for strict clean aesthetic */
+    color: #1a1a1a; /* Crisp dark slate */
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+.font-mono-telemetry {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom scrollbar for clean healthcare UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6FAF8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDE8E2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64736B;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #17221D !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
